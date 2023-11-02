@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+}
+
+.contactusbutton {
+  cursor: pointer;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  background-color: #276955;
+  height: 28px;
+  color: white;
+  font-size: small;
+}
+
+.hero-image {
+  background-image: url("./images/wallpaperhome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.hero-content h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.hero-content p {
+  color: white;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+#carousel-thumbs {
+  background: rgba(255, 255, 255, 0.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+#carousel-thumbs img {
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+#carousel-thumbs img:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+/* #carousel-thumbs .selected img {
+  border-color: #fff;
+} */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 3px;
+  }
+}
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background: #ccccce;
+  }
+}
+
+/* slider home */
+.card {
+  border: none;
+}
+
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* contact us */
+
+.vektoricontact {
+  margin: -2px;
+  opacity: 0.2;
+}
+
+@media (max-width: 766px) {
+  .vektoricontact {
+    display: none;
+  }
+}
+
+.hero-image2 {
+  background-image: url("./contactimages/farm-hero-homepage-gallery4.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  user-select: none;
+}
+
+.hero-content2 h1 {
+  color: black;
+  text-shadow: 1px 1px #276955;
+  user-select: none;
+}
+
+.hero-content2 p {
+  color: black;
+  user-select: none;
+}
+
+.hero-image3 {
+  background-image: url("./productimages/farm-hero-homepage-gallery2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  user-select: none;
+}
+
+.hero-content3 h1 {
+  color: black;
+  text-shadow: 1px 1px #276955;
+  user-select: none;
+}
+
+.hero-content3 p {
+  color: black;
+  user-select: none;
+}
+
+.fonttest {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.boxcontact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 200px;
+}
+
+.fontcontact {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.footerwallpaper {
+  background-image: url("./contactimages/Footerframe_2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* preloader ---------------- */
+.loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.loader {
+  border: 0 soild transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+.loader:before,
+.loader:after {
+  content: "";
+  border: 1em solid #276955;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.loader:before {
+  animation-delay: 0.5s;
+}
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.wallpaperindex2 {
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+}
+
+/* Styles for the button */
+#scrollButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #276955;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Show the button when scrolling */
+body.scrolling #scrollButton {
+  display: block;
+}
+
+::placeholder {
+  opacity: 0.7;
+  font-size: small;
+}
+
+.wallpaperindex23 {
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+  position: absolute;
+  top: 110px;
+}
+
+.open {
+  color: #276955;
+}
+
+.closed {
+  color: red;
+}
+
+.hero-image4 {
+  background-image: url("./aboutusimagesvideos/hero-image4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  user-select: none;
+}
+
+.hero-content4 h1 {
+  color: black;
+  text-shadow: 1px 1px #276955;
+  user-select: none;
+}
+
+.hero-content4 p {
+  color: black;
+  user-select: none;
+}
